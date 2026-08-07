@@ -1,0 +1,39 @@
+.fn-gantt-hint {
+    background: #6c7888 !important;
+    border: 0 !important;
+    color: #fff !important;
+}
+
+.fn-gantt .leftPanel .name {
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    background: #717a86;
+}
+
+.fn-gantt .leftPanel {
+    width: 300px;
+}
+
+.fn-gantt .leftPanel .name {
+    width: 150px;
+}
+
+.fn-gantt .leftPanel .desc {
+    width: 150px;
+}
+
+.fn-gantt .ganttYellow {
+    background-color: #FFEB3B;
+}
+
+.fn-gantt .ganttGray {
+	background-color: #9e9e9e;
+}
+
+.fn-gantt .ganttPrimary {
+	background-color: #337ab7b8;
+}
+
+.fn-gantt .ganttBlue {
+	background-color: #D0E4FD;
+}

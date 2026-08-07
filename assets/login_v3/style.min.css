@@ -1,0 +1,341 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/roboto/Roboto-Light.eot);
+    src: url(../../fonts/roboto/Roboto-Light.eot?#iefix) format('embedded-opentype'), url(../../fonts/roboto/Roboto-Light.svg#Roboto-Light) format('svg'), url(../../fonts/roboto/Roboto-Light.ttf) format('truetype'), url(../../fonts/roboto/Roboto-Light.woff) format('woff'), url(../../fonts/roboto/Roboto-Light.woff2) format('woff2');
+    font-weight: 300
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/roboto/Roboto-Regular.eot);
+    src: url(../../fonts/roboto/Roboto-Regular.eot?#iefix) format('embedded-opentype'), url(../../fonts/roboto/Roboto-Regular.svg#Roboto-Regular) format('svg'), url(../../fonts/roboto/Roboto-Regular.ttf) format('truetype'), url(../../fonts/roboto/Roboto-Regular.woff) format('woff'), url(../../fonts/roboto/Roboto-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/roboto/Roboto-Regular.eot);
+    src: url(../../fonts/roboto/Roboto-Regular.eot?#iefix) format('embedded-opentype'), url(../../fonts/roboto/Roboto-Regular.svg#Roboto-Regular) format('svg'), url(../../fonts/roboto/Roboto-Regular.ttf) format('truetype'), url(../../fonts/roboto/Roboto-Regular.woff) format('woff'), url(../../fonts/roboto/Roboto-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/roboto/Roboto-Medium.eot);
+    src: url(../../fonts/roboto/Roboto-Medium.eot?#iefix) format('embedded-opentype'), url(../../fonts/roboto/Roboto-Medium.svg#Roboto-Medium) format('svg'), url(../../fonts/roboto/Roboto-Medium.ttf) format('truetype'), url(../../fonts/roboto/Roboto-Medium.woff) format('woff'), url(../../fonts/roboto/Roboto-Medium.woff2) format('woff2');
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/roboto/Roboto-Bold.eot);
+    src: url(../../fonts/roboto/Roboto-Bold.eot?#iefix) format('embedded-opentype'), url(../../fonts/roboto/Roboto-Bold.svg#Roboto-Bold) format('svg'), url(../../fonts/roboto/Roboto-Bold.ttf) format('truetype'), url(../../fonts/roboto/Roboto-Bold.woff) format('woff'), url(../../fonts/roboto/Roboto-Bold.woff2) format('woff2');
+    font-weight: 900
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/roboto/Roboto-Italic.eot);
+    src: url(../../fonts/roboto/Roboto-Italic.eot?#iefix) format('embedded-opentype'), url(../../fonts/roboto/Roboto-Italic.svg#Roboto-Italic) format('svg'), url(../../fonts/roboto/Roboto-Italic.ttf) format('truetype'), url(../../fonts/roboto/Roboto-Italic.woff) format('woff'), url(../../fonts/roboto/Roboto-Italic.woff2) format('woff2');
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/roboto/Roboto-BoldItalic.eot);
+    src: url(../../fonts/roboto/Roboto-BoldItalic.eot?#iefix) format('embedded-opentype'), url(../../fonts/roboto/Roboto-BoldItalic.svg#Roboto-BoldItalic) format('svg'), url(../../fonts/roboto/Roboto-BoldItalic.ttf) format('truetype'), url(../../fonts/roboto/Roboto-BoldItalic.woff) format('woff'), url(../../fonts/roboto/Roboto-BoldItalic.woff2) format('woff2');
+    font-weight: 700;
+    font-style: italic
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffac91;
+    border-radius: 30px;
+    transition: .2s
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f15822
+}
+
+body, html {
+    height: 100%
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #737272;
+    font-size: 16px
+}
+
+a {
+    text-decoration: none;
+    color: #737272;
+    transition: color .2s
+}
+
+a:active, a:hover {
+    color: #f15822
+}
+
+.error {
+    color: #f4516c;
+    font-weight: 700;
+    margin-bottom: 20px
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1
+}
+
+.left {
+    flex-basis: 50%;
+}
+
+.left .caption {
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, .1);
+    color: #fff;
+    margin: 150px auto;
+    width: 80%
+}
+
+.left .caption h2 {
+    font-size: 40px;
+    margin: 0 0 25px 0;
+    font-weight: 400
+}
+
+.left .caption span {
+    font-size: 26px
+}
+
+.right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.right form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px
+}
+
+.right form .title-login {
+    font-size: 40px;
+    margin: 40px 0;
+    font-weight: 400
+}
+
+.right .option {
+    display: flex;
+    justify-content: space-between;
+    line-height: 26px;
+    margin-bottom: 25px
+}
+
+.right .option .remember {
+    padding-left: 35px;
+    position: relative;
+    cursor: pointer
+}
+
+.right .option .remember #persistent {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.right .option .remember #persistent:checked ~ .check {
+    background: #f15822;
+    border-color: #f15822
+}
+
+.right .option .remember #persistent:checked ~ .check:after {
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: .3s
+}
+
+.right .option .remember .check {
+    position: absolute;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 5px;
+    transition: .2s;
+    border: 1px solid #bdc3d4
+}
+
+.right .option .remember .check:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 10px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    margin-left: -4px;
+    margin-top: -8px;
+    opacity: 0
+}
+
+.right .call-action {
+    margin: 25px;
+    text-align: center;
+    font-weight: 400
+}
+
+input {
+    display: block;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    transition: .4s
+}
+
+input:focus {
+    outline: 0;
+    border-color: #f15822;
+    box-shadow: 0 0 0 7px rgba(241, 88, 34, .07)
+}
+
+input.submit {
+    width: 100%;
+    background-color: #f15822;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    border-color: #f15822;
+    font-size: 20px
+}
+
+input.submit:hover {
+    outline: 0;
+    border-color: #f15822;
+    background-color: #d83d07;
+    box-shadow: 0 0 0 7px rgba(241, 88, 34, .07);
+    cursor: pointer
+}
+
+.app {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.app a {
+    opacity: .8;
+    transition: .2s
+}
+
+.app a:hover {
+    opacity: 1
+}
+
+.app img {
+    height: 50px
+}
+
+.copy-right {
+    padding: 20px 0 0 0;
+    color: #ccc
+}
+
+.back-to-login {
+    text-align: right
+}
+
+img#captcha + div small u {
+    cursor: pointer
+}
+
+@media screen and (max-width: 768px) {
+    .left {
+        display: none
+    }
+
+    .right {
+        background: url(/style/login/images/bgr-1.png) bottom left no-repeat #f15822;
+        padding: 10px
+    }
+
+    .right form {
+        width: 90%;
+        padding: 40px 15px;
+        background-color: #fff;
+        border-radius: 15px
+    }
+
+    .right form .title-login {
+        font-size: 25px;
+        margin: 0 0 25px 0
+    }
+
+    .right form .option {
+        flex-direction: column;
+        font-size: 14px
+    }
+
+    .right form .option .helps {
+        margin-top: 10px;
+        text-align: right
+    }
+
+    .right form .option .remember {
+        line-height: 18px;
+        padding-left: 28px
+    }
+
+    .right form .option .remember .check {
+        height: 18px;
+        width: 18px
+    }
+
+    .right .call-action {
+        font-size: 14px
+    }
+
+    input.submit {
+        font-size: 16px
+    }
+
+    .app a {
+        opacity: 1
+    }
+
+    .app a img {
+        height: 40px
+    }
+}

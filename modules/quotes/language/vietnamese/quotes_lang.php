@@ -1,0 +1,41 @@
+<?php
+#  Version 2.3.0
+$lang['tnh_quotes'] = 'Báo giá';
+$lang['tnh_add_quote'] = 'Thêm báo giá';
+$lang['tnh_edit_quote'] = 'Sửa báo giá';
+$lang['tnh_reference_no_quote'] = 'Số báo giá';
+$lang['tnh_tb_quotes'] = 'Bảng báo giá';
+
+// $lang['tnh_reference_no_quote'] = 'Quotation No';
+// $lang['tnh_pre_reference_no_quote'] = 'Số báo giá trước';
+$lang['tnh_pre_reference_no_quote'] = 'Pre. Quotation';
+// $lang['date'] = 'Date';
+// $lang['customers'] = 'Customer information';
+// $lang['note'] = 'Attention';
+$lang['attention'] = 'Attention';
+// $lang['tnh_validity'] = 'Hiệu lực';
+$lang['tnh_validity'] = 'Validity';
+$lang['tnh_freight_and_insurance'] = 'Bảo hiểm vận tải hàng hóa';
+// $lang['tnh_list_of_the_parts_origin'] = 'Danh sách các bộ phần nguồn gốc';
+$lang['tnh_list_of_the_parts_origin'] = 'List of the parts origin';
+$lang['tnh_info_components'] = 'Thông tin thành phần';
+$lang['tnh_update_on_items'] = 'Cập nhật vào mặt hàng';
+$lang['tnh_delivery'] = 'Delivery';
+// $lang['tnh_installation_cost'] = "Chi phí lắp đặt";
+$lang['tnh_installation_cost'] = "Installation cost";
+$lang['tnh_convert_order'] = "Chuyển qua đơn hàng";
+$lang['tnh_convert_contract'] = "Tạo hợp đồng bán";
+$lang['tnh_exist_convert_contract'] = "Hợp đồng đã tạo rồi";
+$lang['ch_name_contract'] = "HỢP ĐỒNG BÁN";
+$lang['tnh_status_contract'] = "Trạng thái HĐ";
+$lang['ch__not_status_contract'] = "Chưa tạo HĐ";
+$lang['ch__status_contract'] = "Đã tạo HĐ";
+$lang['ch_created_an_contracts'] = "Đã tạo hợp đồng bán";
+$lang['tnh_progress_payment'] = "Terms of payment";
+$lang['tnh_precent_payment'] = "% payment";
+// $lang['name'] = "Name";
+$lang['tnh_charge'] = "Freight & Insurance";
+$lang['quotes_note_default'] = "Ghi chú mặc định";
+$lang['add_quote_note_default'] = "Thêm ghi chú mặc định";
+$lang['edit_quote_note_default'] = "Sửa ghi chú mặc định";
+$lang['code_quote_note_default'] = "Mã ghi chú mặc định";

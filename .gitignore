@@ -1,0 +1,15 @@
+﻿node_modules/
+dist/
+build/
+.venv/
+venv/
+.env
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+uploads/
+media/
+node_modules/
+vendor/

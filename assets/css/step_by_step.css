@@ -1,0 +1,120 @@
+.wap-right .action-button {
+  background: #3693d8;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.wap-right .action-button:hover,
+.wap-right .action-button:focus {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #67d5bf;
+}
+
+#progressbar li.active-step:before,
+#progressbar li.active-step:after {
+  background: #3894d7;
+  color: white;
+}
+
+/*----*/
+.wap-left {
+  position: relative;
+  width: 20%;
+  float: left;
+}
+.wap-right {
+  position: relative;
+  width: 80%;
+  min-height: 500px;
+  float: left;
+}
+.wap-right .fieldset{
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.wap-right div.fieldset.active{
+  background: #f9f9f9;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.wap-left div.wap-left-title.active{
+  background: #f9f9f9 !important;
+  width: calc(100% + 1px);
+  border-left: 2px solid #459ed6;
+  color: #459ed6;
+  position: relative;
+  z-index: 2;
+}
+.wap-left-title {
+  margin-bottom: 3px;
+  cursor: pointer;
+  background: #f9f9f9;
+  border: 1px solid #cbcbcb;
+  border-right: 0; 
+  border-radius: 1px;
+  padding: 15px 10px;
+}
+.wap-left-title:hover {
+  border-left: 2px solid #459ed6;
+  color: #459ed6;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s;
+}
+.fieldset {
+  overflow: auto;
+  height: 100%;
+  border: 1px solid #9292927a;
+  border-radius: 3px;
+  padding: 15px 20px;
+}
+.validateForm-error {
+  border: 1px solid red !important;
+  color: red !important;
+}
+
+.event_tab_parent {
+  margin-bottom: 3px;
+  cursor: pointer;
+  background: #267ac3;
+  color: #fff;
+  border: 1px solid #cbcbcb;
+  border-right: 0;
+  border-radius: 1px;
+  padding: 15px 10px;
+}
+.event_tab_child {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.event_tab_child.active-child {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.event_tab_child.unactive-child {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+.event_tab_parent .wap-show {
+  color: #fff;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+  font-weight: bold;
+}
+.event_tab_parent.active .wap-show {
+  color: #fff;
+  transform: rotate(270deg);
+  transition: all 0.5s;
+  font-weight: bold;
+}
+.evaluate_view {
+  height: 100%;
+}

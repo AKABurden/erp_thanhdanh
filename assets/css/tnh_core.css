@@ -1,0 +1,44 @@
+.width-icon-actions {
+	width: 15px;
+}
+.primary-table {
+	background: #28b8da !important;
+	color: white !important;
+}
+
+.tnh-tb {
+	border-collapse: collapse !important;
+	width: 100%;
+}
+
+.tnh-tb tr th {
+	font-weight: 500 !important;
+}
+
+.tnh-tb, .tnh-tb tr th, .tnh-tb tr td {
+  	border: 1px solid #9e9e9ea3 !important;
+  	padding: 10px !important;
+  	vertical-align: middle !important;
+}
+
+.table-datatable tr td {
+	vertical-align: middle !important;
+}
+
+.tnh-hr {
+	margin-top: 7px;
+}
+
+td.details-control {
+	background: url('../images/tnh/details_open.png') no-repeat center center;
+	cursor: pointer;
+}
+tr.shown td.details-control {
+	background: url('../images/tnh/details_close.png') no-repeat center center;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    text-overflow: ellipsis;
+}
+
+

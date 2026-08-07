@@ -1,0 +1,189 @@
+<?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
+<?php init_head(); ?>
+<div id="wrapper">
+    <div class="panel_s mbot10 H_scroll" id="" style="margin-bottom: unset">
+        <div class="panel-body ">
+            <div class="_buttons">
+                <span class="bold uppercase fsize18 H_title"><?= $title ?></span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel_s">
+                    <div>
+                        <div class="col-md-2">
+                            <?= lang('tnh_reference_orders', 'orders_search') ?>
+                            <input type="text" name="orders_search" id="orders_search" style="width: 100%;"
+                                   data-placeholder="<?= lang('tnh_reference_orders') ?>"
+                                   value="">
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <?= lang('customers', 'customers_search') ?>
+                                <input type="text" name="customers_search" id="customers_search" style="width: 100%;" data-placeholder="<?= lang('customers') ?>" value="">
+                            </div>
+                        </div>
+                        <?php 
+                            $start_date = date('01/m/Y');
+                            $end_date = date('t/m/Y');
+                        ?>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <?= lang('start_date', 'start_date_search') ?>
+                                <input type="text" name="start_date_search" autocomplete="off" placeholder="<?= lang('start_date') ?>"
+                                    id="start_date_search" class="start_date_search datepicker form-control"
+                                    style="width: 100%;" value="<?= $start_date ?>">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <?= lang('end_date', 'end_date_search') ?>
+                                <input type="text" name="end_date_search" autocomplete="off" placeholder="<?= lang('end_date') ?>"
+                                    id="end_date_search" class="end_date_search datepicker form-control" style="width: 100%;"
+                                    value="<?= $end_date ?>">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <a href="javascript:void(0)" onclick="filterOrders()" class="btn btn-primary" style="margin-top: 25px;"><?= lang('search') ?></a>
+                                <a href="javascript:void(0)" onclick="exportExcelOrders()" class="btn btn-success" style="margin-top: 25px;"><?php echo lang('Xuất excel'); ?></a>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="clearfix"></div>
+                            <div class="table-responsive">
+                                <table id="table-orders" class="table table-orders dataTable" style="width: 100%;">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center"><?= lang('STT') ?></th>
+                                            <th class="text-center"><?= lang('Mã Khách Hàng') ?></th>
+                                            <th class="text-center"><?= lang('Tên Khách Hàng') ?></th>
+                                            <th class="text-center"><?= lang('Đơn Đặt Hàng') ?></th>
+                                            <th class="text-center"><?= lang('Mã Sản Phẩm') ?></th>
+                                            <th class="text-center"><?= lang('Tên Sản Phẩm') ?></th>
+                                            <th class="text-center"><?= lang('<5000 Con') ?></th>
+                                            <th class="text-center"><?= lang('Phiếu Giao Hàng') ?></th>
+                                            <th class="text-center"><?= lang('Ngày Giao Hàng') ?></th>
+                                            <th class="text-center"><?= lang('Ngày Hoàn Thành Giao Hàng') ?></th>
+                                            <th class="text-center"><?= lang('Phiếu Thanh Toán') ?></th>
+                                            <th class="text-center"><?= lang('Phiếu Hải Quan') ?></th>
+                                            <th class="text-center"><?= lang('Ngày Khai Hải Quan') ?></th>
+                                            <th class="text-center"><?= lang('Hoá Đơn Bán') ?></th>
+                                            <th class="text-center"><?= lang('VAT') ?></th>
+                                            <th class="text-center"><?= lang('Thành Tiền') ?></th>
+                                            <th class="text-center"><?= lang('Số Ngày Thu Nợ') ?></th>
+                                            <th class="text-center"><?= lang('Ngày Thu Nợ') ?></th>
+                                            <th class="text-center"><?= lang('Báo Có NH') ?></th>
+                                            <th class="text-center"><?= lang('Ngày Báo Có NH') ?></th>
+                                            <th class="text-center"><?= lang('Mã Phiếu Thu') ?></th>
+                                            <th class="text-center"><?= lang('Số Tiền Thu') ?></th>
+                                            <th class="text-center"><?= lang('Số Tiền Còn Lại') ?></th>
+                                            <th class="text-center"><?= lang('Ngày Nhập Misa') ?></th>
+                                            <th class="text-center"><?= lang('Ngày Cập Nhật Foso') ?></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="99"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php init_tail(); ?>
+<script type="text/javascript" src="<?= js('datatables/jquery.dataTables.min.js') ?>"></script>
+<script type="text/javascript" src="<?= js('datatables/dataTables.fixedColumns.min.js') ?>"></script>
+<script>
+    ajaxSelectParams('#orders_search', 'admin/orders/searchOrders', 0, true, true);
+    var oTable = '';
+    var token = '<?php echo $this->security->get_csrf_token_name(); ?>';
+    var hash = '<?php echo $this->security->get_csrf_hash(); ?>';
+    
+    var fnserverparams = {
+        customers_search: '#customers_search',
+        start_date_search: '#start_date_search',
+        end_date_search: '#end_date_search',
+        orders_search: '#orders_search',
+    };
+
+    oTable = tnhInitDataTable('#table-orders', '', {
+        'order': [
+            [0, 'desc']
+        ],
+        // 'fixedHeader': {
+        //     header: true,
+        // },
+        // 'responsive': true,
+        scrollX:true,
+        'searching': false,
+        'ordering': false,
+        "ajax": {
+            "url": '<?= site_url('admin/reports_summary_h/getOrders') ?>',
+            "type": "POST",
+            "data": function(d) {
+                if (typeof(csrfData) !== 'undefined') {
+                    d[csrfData['token_name']] = csrfData['hash'];
+                }
+                for (var key in fnserverparams) {
+                    d[key] = $(fnserverparams[key]).val();
+                }
+                if ($('#table-orders').attr('data-last-order-identifier')) {
+                    d['last_order_identifier'] = $('#table-orders').attr('data-last-order-identifier');
+                }
+            },
+            "dataSrc": function(json) {
+                return json.aaData;
+            }
+        },
+        "createdRow": function(row, data, index) {},
+        "columnDefs": [],
+    });
+
+    function filterOrders() {
+        oTable.draw();
+    }
+
+    $(document).ready(function () {
+        ajaxSelectParams('#customers_search', 'admin/clients/searchCustomers', $('#customers_search').val(), false, true);
+    });
+
+    $(document).on('change',
+        '#end_date_search,#start_date_search',
+        function(
+            event) {
+            event.preventDefault();
+            oTable.draw();
+        });
+
+    function exportExcelOrders() {
+        var dataPOST = {};
+        dataPOST[token] = hash;
+        for (var key in fnserverparams) {
+            dataPOST[key] = $(fnserverparams[key]).val();
+        }
+
+        $.ajax({
+            type: "POST",
+            url: site.base_url + 'admin/reports_summary_h/exportExcelOrders',
+            data: dataPOST,
+            dataType: "json",
+            success: function(response) {
+                if (response.result) {
+                    alert_float('success', response.message);
+                    download(response.filename, response.file);
+                } else {
+                    alert_float('danger', response.message);
+                }
+            }
+        });
+    }
+</script>

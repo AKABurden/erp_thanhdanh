@@ -1,0 +1,134 @@
+[{
+    "name": "als_staff",
+    "url": "staff",
+    "permission": ""
+}, {
+    "collapse": true,
+    "name": "clients",
+    "permission": "",
+    "children": [{
+        "slug": "customer-groups",
+        "name": "customer_groups",
+        "url": "clients/groups",
+        "permission": ""
+    }]
+}, {
+    "collapse": true,
+    "name": "support",
+    "permission": "",
+    "children": [{
+        "slug": "departments",
+        "name": "acs_departments",
+        "url": "departments",
+        "permission": ""
+    }, {
+        "slug": "tickets-predefined-replies",
+        "name": "acs_ticket_predefined_replies_submenu",
+        "url": "tickets/predefined_replies",
+        "permission": ""
+    }, {
+        "slug": "tickets-priorities",
+        "name": "acs_ticket_priority_submenu",
+        "url": "tickets/priorities",
+        "permission": ""
+    }, {
+        "slug": "tickets-statuses",
+        "name": "acs_ticket_statuses_submenu",
+        "url": "tickets/statuses",
+        "permission": ""
+    }, {
+        "slug": "tickets-services",
+        "name": "acs_ticket_services_submenu",
+        "url": "tickets/services",
+        "permission": ""
+    }, {
+        "slug": "tickets-spam-filters",
+        "name": "spam_filters",
+        "url": "spam_filters/view/tickets",
+        "permission": ""
+    }]
+}, {
+    "collapse": true,
+    "name": "acs_leads",
+    "permission": "",
+    "children": [{
+        "slug": "leads-sources",
+        "name": "acs_leads_sources_submenu",
+        "url": "leads/sources",
+        "permission": ""
+    }, {
+        "slug": "leads-statuses",
+        "name": "acs_leads_statuses_submenu",
+        "url": "leads/statuses",
+        "permission": ""
+    }, {
+        "slug": "leads-email-integration",
+        "name": "leads_email_integration",
+        "url": "leads/email_integration",
+        "permission": ""
+    }, {
+        "slug": "web-to-lead",
+        "name": "web_to_lead",
+        "url": "leads/forms",
+        "permission": ""
+    }]
+}, {
+    "collapse": true,
+    "name": "acs_finance",
+    "permission": "",
+    "children": [{
+        "slug": "taxes",
+        "name": "acs_sales_taxes_submenu",
+        "url": "taxes",
+        "permission": ""
+    }, {
+        "slug": "currencies",
+        "name": "acs_sales_currencies_submenu",
+        "url": "currencies",
+        "permission": ""
+    }, {
+        "slug": "payment-modes",
+        "name": "acs_sales_payment_modes_submenu",
+        "url": "paymentmodes",
+        "permission": ""
+    }, {
+        "slug": "expenses-categories",
+        "name": "acs_expense_categories",
+        "url": "expenses/categories",
+        "permission": ""
+    }]
+}, {
+    "collapse": true,
+    "name": "acs_contracts",
+    "permission": "",
+    "children": [{
+        "slug": "contracts-types",
+        "name": "acs_contract_types",
+        "url": "contracts/types",
+        "permission": ""
+    }]
+}, {
+    "name": "MODULES",
+    "url": "modules",
+    "permission": ""
+}, {
+    "name": "asc_custom_fields",
+    "url": "custom_fields",
+    "permission": ""
+}, {
+    "name": "gdpr_short",
+    "url": "gdpr",
+    "permission": ""
+}, {
+    "name": "acs_roles",
+    "url": "roles",
+    "permission": ""
+}, {
+    "name": "acs_settings",
+    "url": "settings",
+    "permission": ""
+}, {
+    "name": "acs_email_templates",
+    "url": "emails",
+    "permission": ""
+}]

@@ -1,0 +1,81 @@
+PHI?U IN ÐÁNH GIÁ NHÂN S? THEO VÒNG Ð?I								
+KPI tu?n 	KPI tháng = t?ng h?p 4 tu?n 	dánh giá th? vi?c 	KPI 3 tháng 	KPI 6 tháng 	KPI 9 tháng 	KPI 12 tháng 	dánh giá nâng b?c 	dánh giá thang ch?c 
+								
+I. THÔNG TIN CHUNG								
+H? và tên	Auto			Mã nhân s?	Auto			
+Phòng ban	Auto			V? trí	Auto			
+Lo?i dánh giá	Auto			K? dánh giá	Auto			
+Level hi?n t?i	Auto			Level d? xu?t	Auto			
+TG ? level hi?n t?i	Auto			Ngày dánh giá	Auto			
+								
+II. K?T QU? ÐÁNH GIÁ QUA CÁC GATE								
+1. GATE 1 – H? SO / ÐI?U KI?N								
+N?i dung		K?t qu?		N?i dung		K?t qu?		
+JD / KPI / SOP d?y d?		Ð?t		Có d? li?u h? th?ng		Không d?t		
+Có QA / Audit		Không d?t		Có qu?n lý tr?c ti?p		Không d?t		
+K?t lu?n Gate 1						PASS		
+								
+2. GATE 2 – KPI / HI?U SU?T								
+Tiêu chí		Chu?n		Th?c t?		Ði?m		
+Hoàn thành công vi?c		=95%		 Auto 		Auto		
+Ch?t lu?ng (QA)		=98%		 Auto 		Auto		
+Tuân th? SOP		=95%		 Auto 		Auto		
+Báo cáo / h? so		100%		 Auto 		Auto		
+T?ng di?m KPI / P2 final								
+								
+3. GATE 3 – TUÂN TH? / R?I RO								
+N?i dung				K?t qu?		Ghi chú		
+S? l?i				Auto		% d?t		
+L?i l?p l?i				Auto		% d?t		
+L?i Major / Critical				Không		Fail c?ng n?u Có		
+CAPA quá h?n				Không		Fail c?ng n?u Có		
+Attendance / di tr? / ngh? KP				Auto		Ðã c?ng BC vi ph?m		
+BC vi ph?m / penalty				"23,0"		Ði?m tr?		
+K?t lu?n Gate 3 / Compliance adjusted								
+								
+4. GATE 4 – NANG L?C / PHÙ H?P								
+Tiêu chí				Ði?m		Ghi chú		
+Ch? d?ng / h?c vi?c				Auto		Junior+		
+Nang l?c chuyên môn				Auto		All		
+Ph?i h?p / làm vi?c nhóm				Auto		All		
+Trách nhi?m / gi?i quy?t v?n d?						Middle+		
+T?ng di?m nang l?c / P3 final								
+								
+III. T?NG H?P & X?P LO?I								
+KPI / P2								
+Tuân th? / Compliance								
+Nang l?c + Contribution / P3								
+T?NG ÐI?M								
+X?p lo?i								
+C?nh báo								
+IV. K?T LU?N & ACTION								
+K?t lu?n cu?i								
+Lu?ng duy?t t? d?ng								
+Eligibility nâng b?c				N/A				
+Eligibility thang ch?c				N/A				
+Ghi chú								
+"Xem sheet DM_QuyDoi, HuongDan_Map và b?ng Rule Engine V6 d? tra quy d?i % ? di?m, map vi ph?m, cap P3, auto route và eligibility."								
+								
+V. PHÊ DUY?T								
+C?p duy?t		Checklist		K?t qu?		Ý ki?n / ký tên		
+TP.HCNS/TLCM		KPI / nang l?c / h? so d?t		Auto		 		
+KTNB		Data / audit / gian l?n		Auto		 		
+KSRR		SOP / pháp lý / c?nh báo		Auto		 		
+BAN GIÁM Ð?C (BOD)		Phê duy?t ngo?i l? / nâng b?c / thang ch?c		Auto		 		
+								
+VI. AUDIT & XÁC NH?N								
+Ngày l?p phi?u	Auto			Ngu?i l?p	0			
+Ai s?a	0			Ai duy?t	0			
+Th?i gian	0			Mô t? thay d?i	0			
+								
+J. KÝ DUY?T								
+Bi?u m?u dùng cho in gi?y ho?c s? hóa trên ph?n m?m. Các ô màu vàng là ô nh?p li?u / xác nh?n. File final b? sung logic P2/P3 và contribution bonus.								
+								
+	TP.HCNS	KTNB 		 KSRR 		 BOD / Giám d?c 		
+								
+								
+								
+								
+	"(Ký, ghi rõ h? tên)"	"(Ký, ghi rõ h? tên)"		"(Ký, ghi rõ h? tên)"		"(Ký, ghi rõ h? tên)"		
+								
+								

@@ -1,0 +1,104 @@
+.div-box-menu {
+    background: #FEF7E2;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.div-box-menu .div-title {
+    color: #686B7A;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.div-box-menu .div-label {
+    color: #1E0C0A;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.div-box-menu .div-label.active {
+    background: #C49056;
+    color: #FFFFFF;
+}
+
+.div-box-menu .div-label:hover {
+    background: #C49056;
+    color: #FFFFFF;
+}
+
+.div-box-sub-menu .div-title {
+    color: #BD5C02;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.div-box-sub-menu .sub-div {
+    padding: 10px 5px;
+    margin: 5px 0px;
+    font-size: 14px !important;
+    color: #393939 !important;
+    opacity: 0.9 !important;
+}
+
+.div-box-sub-menu .sub-div a {
+    color: #393939 !important;
+}
+
+.div-box-sub-menu .sub-div.active {
+    background: #FEF7E2 !important;
+    border-radius: 8px !important;
+}
+
+.div-box-sub-menu .sub-div:hover {
+    background: #FEF7E2 !important;
+    border-radius: 8px !important;
+    cursor: pointer;
+}
+
+.tab-sub-menu {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.tab-sub-menu::-webkit-scrollbar-thumb {
+    background: #AAA8A6;
+    border-radius: 4px;
+    width: 4px;
+}
+
+.tab-sub-menu::-webkit-scrollbar-track {
+    border-radius: 4px;
+}
+
+.tab-sub-menu::-webkit-scrollbar {
+    width: 4px;
+    height: 10px;
+}
+
+.svg-abs {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.div-box-menu .div-sub-label {
+    margin-left: 50px !important;
+    color: rgba(83, 63, 62, 0.9);
+}
+
+.div-sub-name {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+}
